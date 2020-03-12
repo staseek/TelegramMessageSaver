@@ -1,0 +1,7 @@
+[telegram]
+API_ID=0
+API_HASH=aaaaaaaaaaaaaaaaaaaaaa
+SESSION_NAME=savermess
+
+[saver]
+CHAT_ID=1,2,3,4

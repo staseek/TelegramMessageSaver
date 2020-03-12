@@ -1,0 +1,20 @@
+version: "2"
+services:
+    tor:
+        image: dperson/torproxy
+        networks:
+          - telesavernet
+    telesaver:
+        build: 
+            context: . 
+            dockerfile: Dockerfile
+        volumes:
+            - ./config:/TeleSaver/config
+        restart: always
+        networks: 
+            - telesavernet
+
+
+networks:
+    telesavernet:
+        driver: bridge
