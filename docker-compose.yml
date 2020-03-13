@@ -2,8 +2,10 @@ version: "2"
 services:
     tor:
         image: dperson/torproxy
+        restart: always
         networks:
           - telesavernet
+        
     telesaver:
         build: 
             context: . 
